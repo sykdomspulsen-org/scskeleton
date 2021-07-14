@@ -58,7 +58,6 @@ tm_run_task <- function(task_name, index_plan = NULL, index_analysis = NULL) {
 #' @export config
 config <- new.env()
 
-
 # https://github.com/rstudio/rmarkdown/issues/1632
 # An error is thrown when rendering multiple rmarkdown documents in parallel.
 clean_tmpfiles_mod <- function() {
