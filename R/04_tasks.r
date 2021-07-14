@@ -1,3 +1,15 @@
+# ******************************************************************************
+# 04_tasks.r
+#
+# PURPOSE 1:
+#   Set all the tasks that are run by the package.
+#
+#   These are basically all of the "things" that you want to do.
+#   E.g. Downloading data, cleaning data, importing data, analyzing data,
+#   making Excel files, making docx/pdf reports, sending emails, etc.
+#
+# ******************************************************************************
+
 set_tasks <- function() {
   # __________ ----
   # Weather  ----

@@ -42,6 +42,7 @@ clean_tmpfiles_mod <- function() {
 #' etc. *before* we run the task. Hence, this wrapper ensures that all of this
 #' package's configs files are loaded via OURPACKAGE::.onLoad() first, and then
 #' sc::tm_run_task can run.
+#'
 #' @param task_name Name of the task
 #' @param index_plan Not used
 #' @param index_analysis Not used
