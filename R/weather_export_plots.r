@@ -1,21 +1,21 @@
 # **** action **** ----
-#' weather_export_weather_plots (action)
+#' weather_export_plots (action)
 #' @param data Data
 #' @param argset Argset
 #' @param schema DB Schema
 #' @export
-weather_export_weather_plots_action <- function(data, argset, schema) {
-  # tm_run_task("weather_export_weather_plots")
+weather_export_plots_action <- function(data, argset, schema) {
+  # tm_run_task("weather_export_plots")
 
   if(plnr::is_run_directly()){
-    # sc::tm_get_plans_argsets_as_dt("weather_export_weather_plots")
+    # sc::tm_get_plans_argsets_as_dt("weather_export_plots")
 
     index_plan <- 1
     index_analysis <- 1
 
-    data <- sc::tm_get_data("weather_export_weather_plots", index_plan = index_plan)
-    argset <- sc::tm_get_argset("weather_export_weather_plots", index_plan = index_plan, index_analysis = index_analysis)
-    schema <- sc::tm_get_schema("weather_export_weather_plots")
+    data <- sc::tm_get_data("weather_export_plots", index_plan = index_plan)
+    argset <- sc::tm_get_argset("weather_export_plots", index_plan = index_plan, index_analysis = index_analysis)
+    schema <- sc::tm_get_schema("weather_export_plots")
   }
 
   # code goes here
@@ -43,18 +43,18 @@ weather_export_weather_plots_action <- function(data, argset, schema) {
 }
 
 # **** data_selector **** ----
-#' weather_export_weather_plots (data selector)
+#' weather_export_plots (data selector)
 #' @param argset Argset
 #' @param schema DB Schema
 #' @export
-weather_export_weather_plots_data_selector = function(argset, schema){
+weather_export_plots_data_selector = function(argset, schema){
   if(plnr::is_run_directly()){
-    # sc::tm_get_plans_argsets_as_dt("weather_export_weather_plots")
+    # sc::tm_get_plans_argsets_as_dt("weather_export_plots")
 
     index_plan <- 1
 
-    argset <- sc::tm_get_argset("weather_export_weather_plots", index_plan = index_plan)
-    schema <- sc::tm_get_schema("weather_export_weather_plots")
+    argset <- sc::tm_get_argset("weather_export_plots", index_plan = index_plan)
+    schema <- sc::tm_get_schema("weather_export_plots")
   }
 
   # The database schemas can be accessed here

@@ -70,10 +70,10 @@ set_tasks <- function() {
   )
 
   ## > weather_clean_data ----
-  # tm_run_task("weather_export_weather_plots")
+  # tm_run_task("weather_export_plots")
   sc::add_task_from_config_v8(
     name_grouping = "weather",
-    name_action = "export_weather_plots",
+    name_action = "export_plots",
     name_variant = NULL,
     cores = 1,
     plan_analysis_fn_name = NULL,
@@ -88,8 +88,8 @@ set_tasks <- function() {
     ),
     upsert_at_end_of_each_plan = FALSE,
     insert_at_end_of_each_plan = FALSE,
-    action_fn_name = "scskeleton::weather_export_weather_plots_action",
-    data_selector_fn_name = "scskeleton::weather_export_weather_plots_data_selector",
+    action_fn_name = "scskeleton::weather_export_plots_action",
+    data_selector_fn_name = "scskeleton::weather_export_plots_data_selector",
     schema = list(
       # input
       "anon_example_weather_data" = sc::config$schemas$anon_example_weather_data
